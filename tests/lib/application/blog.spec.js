@@ -10,7 +10,6 @@ describe('Blog', function () {
 		it('should draft blog posts', async function() {
 			const command = draftPost({title: 'Getting stratrd with TDD', body: 'Some content'})
 			const id = await this.blog.draft(command);
-			console.log(id);
 			const postViewModel = await this.blog.getPostById(id);
 			expect(postViewModel.draft).to.be.true
 		});
