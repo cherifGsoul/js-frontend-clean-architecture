@@ -1,0 +1,13 @@
+<form on:submit="save(scope.event)">
+	<div>
+		<label>Title</label>
+		<input placeholder="Post Title" value:bind="this.title">
+	</div>
+	<div>
+		<label>Content</label>
+		<textarea placeholder="Post Body" value:bind="this.body"></textarea>
+	</div>
+	<div>
+		<button type="submit">Save</button>
+	</div>
+</form>

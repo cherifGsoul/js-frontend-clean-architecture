@@ -1,0 +1,31 @@
+{
+  "name": "js-cqrs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "can-fixture": "^3.1.7",
+    "chai": "^4.3.4",
+    "mocha": "^9.0.3"
+  },
+  "scripts": {
+    "test": "mocha --recursive tests/**/*.spec.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "can": "^6.6.1",
+    "can-stache-element": "^1.2.0",
+    "can-type": "^1.1.6",
+    "steal": "^2.2.4",
+    "uuid": "^8.3.2"
+  },
+  "steal": {
+    "main": "infrastructure/frontend/can/main",
+    "plugins": [
+      "can"
+    ],
+    "directories": {
+      "lib": "lib"
+    }
+  }
+}
